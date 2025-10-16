@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav>
+      <h1 class="logo">Ananth Ram</h1>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="hero">
+    <div class="hero-content">
+      <h2>Hi, I'm <span>Ananth Ram</span></h2>
+      <p>Software Engineer</p>
+      <a href="#projects" class="btn">View My Work</a>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I'm an aspiring software engineer with a growing passion in web technologies, design, and problem solving. 
+      I love learning new tools and frameworks that help me build modern and interactive web applications.
+    </p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>Dice Roller Game</h3>
+        <p>A fun JavaScript-based dice rolling website for tabletop gaming enthusiasts.</p>
+        <a href="https://ananth-ramm.github.io/dice-roller/" class="btn">View Project</a>
+      </div>
+      <div class="project-card">
+        <h3>Lab Work</h3>
+        <p>A website showcasing my skills in HTML, CSS, and JavaScript.</p>
+        <a href="https://ananth-ramm.github.io/lab-exercises-1/" class="btn">View Project</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+  <h2>Contact Me</h2>
+  <p>I'd love to hear from you! Fill out the form below to get in touch.</p>
+
+ <section id="contact">
+  <h3>Contact Me</h3>
+  <form id="contactForm">
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" placeholder="Write your message..." required></textarea>
+
+    <button type="button" onclick="Submit()">Submit</button>
+  </form>
+</section>
+
+<script>
+function Submit() {
+  alert('Thank you for your message!');
+}
+</script>
+
+
+  <footer>
+    <p>© 2025 Ananth Ram | Built with HTML + CSS + JS</p>
+  </footer>
+</body>
+</html>
